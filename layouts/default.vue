@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <header>
       <nav class="flex justify-between bg-green-300 px-8 py-6 font-Montserrat">
         <div>Logo</div>
@@ -18,7 +18,7 @@
         class="flex flex-col-3 justify-around bg-green-500 p-12 font-Montserrat"
       >
         <div class="w-1/3">
-          <div>Logo</div>
+          <div class="text-4xl font-bold">Logo</div>
           <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus, nisi?
