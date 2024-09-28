@@ -1,6 +1,14 @@
 <template>
   <div class="font-Montserrat">
-    <div class="bg-gray-900 text-white">Hello I'm div. Daily Commit</div>
+    <div class="min-h-[60vh] flex justify-between">
+      <div class="mt-[15vh] ml-[5vh]">
+        <div>Title</div>
+        <div>Sub Title</div>
+        <div>Description</div>
+        <div>Call-to-Action</div>
+      </div>
+      <div>Insert Image</div>
+    </div>
   </div>
 </template>
 
