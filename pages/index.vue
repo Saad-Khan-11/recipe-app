@@ -17,7 +17,7 @@
             Like I said, we're just a bunch of recipes. Green, healthy ones that
             your body will like. And it won't cost you anything.
           </div>
-          <Button title="View Recipes"></Button>
+          <Button title="View Recipes" class="text-xl px-6 py-2"></Button>
         </div>
         <div class="object-cover h-1/2 w-1/2 p-10">
           <img
