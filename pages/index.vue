@@ -1,8 +1,11 @@
 <template>
-  <div class="font-Montserrat">
-    <img src="../assets/images/home-hero.jpg" alt="" />
-    <div class="min-h-[60vh] flex justify-between">
-      <div class="mt-40 ml-12">
+  <div class="font-Montserrat relative">
+    <div
+      class="absolute inset-0 bg-cover bg-center opacity-50"
+      style="background-image: url('../assets/images/home-bg.jpg')"
+    ></div>
+    <div class="relative min-h-[60vh] flex justify-between">
+      <div class="mt-40 ml-12 z-10">
         <div class="text-5xl font-bold my-2">
           Green Recipes for Anyone, Anywhere.
         </div>
@@ -13,9 +16,9 @@
           Like I said, we're just a bunch of recipes. Green, healthy ones that
           your body will like.
         </div>
-        <button class="button">View Our Recipes</button>
+        <Button class="fit-content" title="View Recipes"></Button>
       </div>
-      <div class="object-cover h-[50vh] w-[50vw]">
+      <div class="object-cover h-[50vh] w-[50vw] z-10">
         <img src="../assets/images/showcase-image.jpg" alt="my hero" />
       </div>
     </div>
@@ -24,8 +27,4 @@
 
 <script setup></script>
 
-<style scoped>
-.button {
-  @apply bg-green-500 hover:bg-green-700 duration-200 text-white font-bold py-2 px-4 rounded;
-}
-</style>
+<style scoped></style>
