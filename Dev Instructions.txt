@@ -1,0 +1,20 @@
+Okay so I want this app to have the following functionality.
+
+[ X ] It should allow me to create, update and delete a recipe
+[ X ] It should allow me to search for a recipe from the database
+[ X ] It should have filters that I can select to show specific recipes according to criteria
+[ X ] It should have a master products section where all the recipes are present
+
+
+[ X ] = The functionality hasn't been added yet
+[ - ] = The fucntionality is under progress
+[ = ] = The fucntionality has been added
+
+
+--------------------------------------------------------------------------------------------------
+
+
+Tasks Checklist:
+
+Connect the app with a database
+Finish basic UI of all pages

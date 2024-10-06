@@ -2,12 +2,12 @@
   <div>
     <header>
       <nav class="flex justify-between bg-green-300 px-8 py-6 font-Montserrat">
-        <div>Logo</div>
-        <div class="flex justify-around gap-5">
-          <div>Home</div>
-          <div>Products</div>
-          <div>Recipes</div>
-          <div>Blog</div>
+        <div>Home (Logo)</div>
+        <div class="flex justify-around gap-10">
+          <div>About</div>
+          <div>Search for Recipe</div>
+          <div>Recipes for Sale</div>
+          <div>Create your Recipe</div>
         </div>
         <div>Contact Us</div>
       </nav>

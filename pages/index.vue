@@ -1,7 +1,7 @@
 <template>
   <div class="font-Montserrat relative">
     <div>
-      <div class="absolute inset-0 bg-cover bg-center opacity-40 z-5">
+      <div class="absolute inset-0 bg-cover bg-center opacity-40 z-1">
         <img
           src="../assets/images/home-bg.jpg"
           alt=""
@@ -22,7 +22,6 @@
         <div class="object-cover h-1/2 w-1/2 p-10">
           <img
             src="../assets/images/showcase-image.jpg"
-            alt="my hero"
             class="border-4 border-green-500 rounded-xl"
           />
         </div>
