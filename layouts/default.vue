@@ -2,14 +2,14 @@
   <div>
     <header>
       <nav class="flex justify-between bg-green-300 px-8 py-6 font-Montserrat">
-        <div>Home (Logo)</div>
+        <NuxtLink to="/">Home (Logo)</NuxtLink>
         <div class="flex justify-around gap-10">
-          <div>About</div>
-          <div>Search for Recipe</div>
-          <div>Recipes for Sale</div>
-          <div>Create your Recipe</div>
+          <NuxtLink to="/about">About</NuxtLink>
+          <NuxtLink to="/search">Search for Recipe</NuxtLink>
+          <NuxtLink to="/recipes">Recipes for Sale</NuxtLink>
+          <NuxtLink to="/recipe-editor">Create your Recipe</NuxtLink>
         </div>
-        <div>Contact Us</div>
+        <NuxtLink to="/contact">Contact Us</NuxtLink>
       </nav>
     </header>
     <div><slot /></div>

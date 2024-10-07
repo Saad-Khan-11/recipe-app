@@ -2,7 +2,7 @@
   <div class="font-Montserrat relative">
     <div class="absolute inset-0 bg-cover bg-center opacity-40 z-5">
       <img
-        src="../assets/images/home-bg.jpg"
+        src="@/assets/images/home-bg.jpg"
         alt=""
         class="h-full w-full object-cover"
       />
@@ -10,7 +10,7 @@
     <div class="relative min-h-[70vh] flex justify-start pt-16">
       <div class="object-cover h-1/2 w-1/2 p-10">
         <img
-          src="../assets/images/showcase-image.jpg"
+          src="@/assets/images/showcase-image.jpg"
           alt="my hero"
           class="border-4 border-green-500 rounded-xl"
         />
@@ -27,7 +27,7 @@
     <div class="relative min-h-[110vh] flex flex-col justify-center">
       <div class="items-center text-center">
         <div class="text-6xl font-bold my-2">The Story of Green Recipes...</div>
-        <div class="text-2xl mx-64 my-2">
+        <div class="text-2xl mx-64 my-2 mt-12">
           It all started with a simple idea. To make healthy food easy for
           everyone. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Sequi ullam voluptate dolorem at itaque nostrum accusantium! A
@@ -40,7 +40,7 @@
         </div>
         <Button
           title="Try Our Recipes!"
-          class="text-xl py-2 px-6 my-2"
+          class="text-xl py-2 px-6 my-2 mt-6"
         ></Button>
       </div>
     </div>

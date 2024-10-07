@@ -3,8 +3,7 @@
     <div>
       <div class="absolute inset-0 bg-cover bg-center opacity-40 z-1">
         <img
-          src="../assets/images/home-bg.jpg"
-          alt=""
+          src="@/assets/images/home-bg.jpg"
           class="h-full w-full object-cover"
         />
       </div>
@@ -21,7 +20,7 @@
         </div>
         <div class="object-cover h-1/2 w-1/2 p-10">
           <img
-            src="../assets/images/showcase-image.jpg"
+            src="@/assets/images/showcase-image.jpg"
             class="border-4 border-green-500 rounded-xl"
           />
         </div>
