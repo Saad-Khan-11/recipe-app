@@ -9,9 +9,7 @@
       </div>
       <div class="relative min-h-[70vh] flex justify-between">
         <div class="mt-40 ml-12">
-          <div class="text-6xl font-bold my-2">
-            Green Recipes for Anyone, Anywhere.
-          </div>
+          <div class="text-6xl font-bold my-2">Create Your Recipe</div>
           <div class="text-2xl my-2">
             Like I said, we're just a bunch of recipes. Green, healthy ones that
             your body will like. And it won't cost you anything.
