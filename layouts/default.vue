@@ -5,9 +5,9 @@
         <NuxtLink to="/">Home (Logo)</NuxtLink>
         <div class="flex justify-around gap-10">
           <NuxtLink to="/about-us">About Us</NuxtLink>
-          <NuxtLink to="/search-for-recipe">Search for Recipe</NuxtLink>
-          <NuxtLink to="/recipes-for-sale">Recipes for Sale</NuxtLink>
-          <NuxtLink to="/create-your-recipe">Create your Recipe</NuxtLink>
+          <NuxtLink to="/browse-recipes">Browse Recipes</NuxtLink>
+          <NuxtLink to="/recipes">Recipes</NuxtLink>
+          <NuxtLink to="/create-recipe">Create your Recipe</NuxtLink>
         </div>
         <NuxtLink to="/contact-us">Contact Us</NuxtLink>
       </nav>
