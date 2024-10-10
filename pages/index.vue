@@ -18,7 +18,7 @@
           </div>
           <Button title="View Recipes" class="text-xl px-6 py-2"></Button>
         </div>
-        <div class="object-cover h-1/2 w-1/2 p-10">
+        <div class="h-1/2 w-1/2 p-10 flex-shrink-0 flex-grow-0">
           <img
             src="@/assets/images/showcase-image.jpg"
             class="border-4 border-green-500 rounded-xl"
