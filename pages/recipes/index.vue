@@ -7,22 +7,20 @@
           class="h-full w-full object-cover"
         />
       </div>
-      <div class="relative min-h-[70vh] flex justify-between">
-        <div class="mt-40 ml-12">
-          <div class="text-6xl font-bold my-2">
-            Find the Recipe for Yourself.
+      <div class="relative">
+        <div class="text-center font-bold text-5xl p-2">Recipes</div>
+        <div class="grid grid-cols-5 gap-5 p-20">
+          <div v-for="p in recipes">
+            <Card :recipes="p"></Card>
           </div>
-          <div class="text-2xl my-2">
-            Like I said, we're just a bunch of recipes. Green, healthy ones that
-            your body will like. And it won't cost you anything.
-          </div>
-          <Button title="View Recipes" class="text-xl px-6 py-2"></Button>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data: recipes } = await useFetch("https://fakestoreapi.com/products");
+</script>
 
 <style scoped></style>
