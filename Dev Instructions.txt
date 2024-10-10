@@ -14,7 +14,13 @@ Okay so I want this app to have the following functionality.
 --------------------------------------------------------------------------------------------------
 
 
-Tasks Checklist:
+Tasks Remaining:
 
-Connect the app with an api first
+Connect the app with spoon recipe api and display its data
 Connect the app with a database
+
+
+Tasks Done:
+
+Complete Basic UI
+Connect the app with an api first
