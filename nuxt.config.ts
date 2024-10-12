@@ -13,4 +13,9 @@ export default defineNuxtConfig({
       Montserrat: true,
     },
   },
+  runtimeConfig: {
+    public: {
+      spoonApiKey: process.env.SPOON_API_KEY,
+    },
+  },
 });
