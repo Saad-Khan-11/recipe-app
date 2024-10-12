@@ -8,7 +8,7 @@
         />
       </div>
       <div class="relative">
-        <div class="text-center font-bold text-5xl p-2">Recipes</div>
+        <div class="flex justify-center font-bold text-5xl pt-12">Recipes</div>
         <div class="grid grid-cols-5 gap-5 p-20">
           <div v-for="p in recipes">
             <Card :recipes="p"></Card>
