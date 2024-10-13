@@ -1,7 +1,6 @@
 <template>
   <div>
     Get Random Recipe
-    <div v-if="pending">Loading...</div>
     <div v-if="error">You have run into an unexpected error.</div>
   </div>
 </template>
@@ -19,9 +18,11 @@ const { data: spoon, error } = await useFetch(
   }
 );
 
-if (spoon.value) {
-  console.log("Spoonacular API response:", spoon.value);
-}
+console.log("Spoon API response:", spoon.value.recipes);
+
+console.log("Spoon API title response:", spoon.value.recipes.title);
+
+console.log("Spoon API summary response:", spoon.value.recipes.summary);
 </script>
 
 <style scoped></style>
