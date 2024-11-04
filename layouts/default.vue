@@ -1,11 +1,14 @@
 <template>
-  <div>
+  <div class="relative min-h-screen">
+    <!-- Background Image -->
     <div class="absolute inset-0 bg-cover bg-center opacity-30 -z-10">
       <img
         src="@/assets/images/home-bg.jpg"
         class="h-full w-full object-cover"
       />
     </div>
+
+    <!-- Header -->
     <header>
       <nav class="flex justify-between bg-green-300 px-8 py-6 font-Montserrat">
         <NuxtLink to="/">Home (Logo)</NuxtLink>
@@ -18,7 +21,11 @@
         <NuxtLink to="/contact-us">Contact Us</NuxtLink>
       </nav>
     </header>
+
+    <!-- Page Content -->
     <div><slot /></div>
+
+    <!-- Footer -->
     <footer>
       <div
         class="flex flex-col-3 justify-around bg-green-500 p-12 font-Montserrat"
