@@ -1,12 +1,6 @@
 <template>
   <div class="font-Montserrat relative">
     <div>
-      <div class="absolute inset-0 bg-cover bg-center opacity-40 z-5">
-        <img
-          src="@/assets/images/home-bg.jpg"
-          class="h-full w-full object-cover"
-        />
-      </div>
       <div class="relative">
         <div class="flex justify-center font-bold text-5xl pt-12">Recipes</div>
         <div class="grid grid-cols-5 gap-5 p-20">

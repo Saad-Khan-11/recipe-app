@@ -1,12 +1,6 @@
 <template>
   <div class="font-Montserrat relative">
     <div>
-      <div class="absolute inset-0 bg-cover bg-center opacity-40 z-5">
-        <img
-          src="@/assets/images/home-bg.jpg"
-          class="h-full w-full object-cover"
-        />
-      </div>
       <div class="relative min-h-[70vh] flex justify-center">
         <div class="mt-40 ml-12">
           <div class="text-6xl font-bold my-2">

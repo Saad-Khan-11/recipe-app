@@ -1,5 +1,11 @@
 <template>
   <div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-30 -z-10">
+      <img
+        src="@/assets/images/home-bg.jpg"
+        class="h-full w-full object-cover"
+      />
+    </div>
     <header>
       <nav class="flex justify-between bg-green-300 px-8 py-6 font-Montserrat">
         <NuxtLink to="/">Home (Logo)</NuxtLink>
@@ -24,14 +30,13 @@
             Necessitatibus, nisi?
           </div>
         </div>
-        <div class="w-1/3">
-          <div>Home</div>
-          <div>Products</div>
-          <div>Recipes</div>
-          <div>Blog</div>
-          <div>Contact Us</div>
+        <div class="w-1/3 flex flex-col">
+          <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/about-us">About Us</NuxtLink>
+          <NuxtLink to="/browse-recipes">Browse Recipes</NuxtLink>
+          <NuxtLink to="/recipes">Recipes</NuxtLink>
+          <NuxtLink to="/contact-us">Contact Us</NuxtLink>
         </div>
-        <div>Contact Form</div>
       </div>
     </footer>
   </div>
