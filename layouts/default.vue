@@ -1,29 +1,27 @@
 <template>
-  <div class="relative min-h-screen">
-    <!-- Background Image -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-30 -z-10">
-      <img
-        src="@/assets/images/home-bg.jpg"
-        class="h-full w-full object-cover"
-      />
+  <!-- Header -->
+  <header>
+    <nav class="flex justify-between bg-green-300 px-8 py-6 font-Montserrat">
+      <NuxtLink to="/">Home (Logo)</NuxtLink>
+      <div class="flex justify-around gap-10">
+        <NuxtLink to="/about-us">About Us</NuxtLink>
+        <NuxtLink to="/browse-recipes">Browse Recipes</NuxtLink>
+        <NuxtLink to="/recipes">Recipes</NuxtLink>
+        <NuxtLink to="/create-recipe">Create your Recipe</NuxtLink>
+      </div>
+      <NuxtLink to="/contact-us">Contact Us</NuxtLink>
+    </nav>
+  </header>
+
+  <!-- Page Content -->
+  <div>
+    <div class="relative min-h-content">
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-[url('@/assets/images/home-bg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed opacity-30 -z-10"
+      ></div>
+      <slot />
     </div>
-
-    <!-- Header -->
-    <header>
-      <nav class="flex justify-between bg-green-300 px-8 py-6 font-Montserrat">
-        <NuxtLink to="/">Home (Logo)</NuxtLink>
-        <div class="flex justify-around gap-10">
-          <NuxtLink to="/about-us">About Us</NuxtLink>
-          <NuxtLink to="/browse-recipes">Browse Recipes</NuxtLink>
-          <NuxtLink to="/recipes">Recipes</NuxtLink>
-          <NuxtLink to="/create-recipe">Create your Recipe</NuxtLink>
-        </div>
-        <NuxtLink to="/contact-us">Contact Us</NuxtLink>
-      </nav>
-    </header>
-
-    <!-- Page Content -->
-    <div><slot /></div>
 
     <!-- Footer -->
     <footer>
