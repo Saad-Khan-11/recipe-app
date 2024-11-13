@@ -24,3 +24,4 @@ Tasks Done:
 
 Complete Basic UI
 Connect the app with an api first
+Polish the UI as much as I can
