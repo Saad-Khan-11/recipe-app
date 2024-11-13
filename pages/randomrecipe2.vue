@@ -1,13 +1,5 @@
 <template>
   <div class="flex justify-center flex-col items-center text-center">
-    <div class="my-12 text-xl font-bold">
-      Feeling Lucky? Click the button below!
-    </div>
-    <Button
-      @click="fetchRecipe"
-      class="p-4 m-4"
-      title="Get a Random Recipe"
-    ></Button>
     <div
       v-if="spoon && spoon.recipes && spoon.recipes.length > 0"
       class="flex justify-center flex-col items-center text-center"
@@ -16,6 +8,14 @@
       <img :src="spoon.recipes[0].image" alt="" class="my-6" />
       <p v-html="spoon.recipes[0].summary" class="my-6 w-3/4"></p>
     </div>
+    <div class="my-12 text-xl font-bold">
+      Feeling Lucky? Click the button below!
+    </div>
+    <Button
+      @click="fetchRecipe"
+      class="p-4 m-4"
+      title="Get a Random Recipe"
+    ></Button>
   </div>
 </template>
 
