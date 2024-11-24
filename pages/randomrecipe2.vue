@@ -9,7 +9,7 @@
       <p v-html="spoon.recipes[0].summary" class="my-6 w-3/4"></p>
     </div>
     <div class="my-12 text-xl font-bold">
-      Feeling Lucky? Click the button below!
+      Feeling Lucky? Click the Button below!
     </div>
     <Button
       @click="fetchRecipe"
