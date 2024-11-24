@@ -7,8 +7,9 @@
     <div class="flex justify-center">
       <div class="text-xl mb-6">Recipe</div>
       <div class="grid grid-cols-4">
-        <!-- <div v-for="r in response.data.recipes"></div>
-        <Card :recipes="r"></Card> -->
+        <div v-for="(r, index) in spoon.value?.recipes" :key="index">
+          <Card :recipes="r"></Card>
+        </div>
       </div>
     </div>
   </div>
@@ -19,16 +20,16 @@ const config = useRuntimeConfig();
 
 const spoon = ref(null);
 
-const response = await useFetch("https://api.spoonacular.com/recipes/random", {
+const { data } = await useFetch("https://api.spoonacular.com/recipes/random", {
   params: {
     apiKey: config.public.spoonApiKey,
-    number: 1,
+    number: 4,
   },
 });
 
-spoon.value = response.data.value;
+spoon.value = data.value;
 
-console.log(spoon.value.recipes[0]);
+console.log(spoon.value?.recipes);
 </script>
 
 <style scoped></style>
