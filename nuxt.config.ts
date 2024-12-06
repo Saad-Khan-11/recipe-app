@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      spoonApiKey: process.env.SPOON_API_KEY,
+      SPOON_API_KEY: process.env.SPOON_API_KEY,
     },
   },
 });

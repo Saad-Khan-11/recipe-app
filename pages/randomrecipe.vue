@@ -29,7 +29,7 @@ const fetchRecipe = async () => {
       "https://api.spoonacular.com/recipes/random",
       {
         params: {
-          apiKey: config.public.spoonApiKey,
+          apiKey: config.public.SPOON_API_KEY,
           number: 1,
         },
       }
