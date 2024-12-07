@@ -1,14 +1,11 @@
 <template>
   <div class="font-Montserrat relative flex flex-col text-center p-10">
     <div class="text-6xl font-bold">Spoonacular API</div>
-    <div class="text-2xl">
-      This is a sandbox page for the Spoonacular API. Click the button below
-    </div>
+    <div class="text-2xl">This is a sandbox page for the Spoonacular API.</div>
     <!-- <Button title="Get Random Recipes" @click="fetchRecipe"></Button> -->
   </div>
   <div>
     <div class="flex justify-center">
-      <div class="text-xl mb-6">Recipe</div>
       <div class="grid grid-cols-4">
         <div v-if="spoon === 0">No recipes found.</div>
         <div v-for="p in spoon" :key="p.id">
