@@ -2,9 +2,8 @@
   <div class="font-Montserrat relative">
     <div class="relative">
       <div class="flex justify-center font-bold text-5xl pt-12">Recipes</div>
-      <button class="p-4 m-4 bg-blue-500" @click="fetchRecipe">
-        Get Random Recipes
-      </button>
+      <Button @click="fetchRecipe" title="Get Random Recipes" class="p-4">
+      </Button>
       <div class="grid grid-cols-5 gap-5 p-4">
         <div v-if="spoon.length === 0">No recipes found.</div>
         <div v-for="p in spoon" :key="p.id">
