@@ -5,9 +5,9 @@
       <NuxtLink to="/">Home (Logo)</NuxtLink>
       <div class="flex justify-around gap-10">
         <NuxtLink to="/about-us">About Us</NuxtLink>
-        <NuxtLink to="/browse-recipes">Browse Recipes</NuxtLink>
+        <NuxtLink to="/recipes/browse-recipes">Browse Recipes</NuxtLink>
         <NuxtLink to="/recipes">Recipes</NuxtLink>
-        <NuxtLink to="/randomrecipe">Random Recipe</NuxtLink>
+        <NuxtLink to="/recipes/randomrecipe">Random Recipe</NuxtLink>
       </div>
       <NuxtLink to="/contact-us">Contact Us</NuxtLink>
     </nav>
@@ -38,7 +38,7 @@
         <div class="w-1/3 flex flex-col">
           <NuxtLink to="/">Home</NuxtLink>
           <NuxtLink to="/about-us">About Us</NuxtLink>
-          <NuxtLink to="/randomrecipe">Random Recipe</NuxtLink>
+          <NuxtLink to="/recipes/randomrecipe">Random Recipe</NuxtLink>
           <NuxtLink to="/recipes">Recipes</NuxtLink>
           <NuxtLink to="/contact-us">Contact Us</NuxtLink>
         </div>
