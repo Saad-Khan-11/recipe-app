@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 gap-10">
+  <div class="grid grid-cols-2 gap-10 font-Montserrat">
     <div class="p-7">
       <img
         :src="product.image"
@@ -8,11 +8,14 @@
       />
     </div>
     <div class="p-7">
-      <div class="text-4xl font-bold truncate text-gray-500 my-7">
+      <div class="text-4xl font-bold text-gray-500 my-7">
         {{ product.title }}
       </div>
+
       <div class="border-b border-gray-500 my-7"></div>
       <div v-html="product.summary"></div>
+      <p class="my-4 font-bold">Instructions</p>
+      <div v-html="product.instructions"></div>
     </div>
   </div>
 </template>
