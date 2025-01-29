@@ -11,9 +11,8 @@
       <div class="text-4xl font-bold truncate text-gray-500 my-7">
         {{ product.title }}
       </div>
-      <div class="text-2xl">Price - ${{ product.price }}</div>
       <div class="border-b border-gray-500 my-7"></div>
-      <div>{{ product.description }}</div>
+      <div v-html="product.summary"></div>
     </div>
   </div>
 </template>

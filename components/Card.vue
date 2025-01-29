@@ -2,7 +2,7 @@
   <div class="card text-center flex flex-col justify-center">
     <img :src="recipes.image" alt="recipe image" class="thumbnail" />
     <div class="font-bold m-4 truncate">{{ recipes.title }}</div>
-    <NuxtLink :to="`/recipes/${recipes.id}`"
+    <NuxtLink :to="`/recipes/${recipes.id}/information`"
       ><button class="button py-2 px-6">View Recipes</button></NuxtLink
     >
   </div>
