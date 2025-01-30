@@ -16,12 +16,42 @@
           <div class="flex justify-center">
             <Button title="Search" class="text-xl px-6 py-2"></Button>
           </div>
+
+          <div class="grid grid-cols-4">
+            <div v-for="p in spoon" :key="p.id" class="flex justify-between">
+              <Card :recipes="p" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const config = useRuntimeConfig();
+const spoon = ref([]);
+
+const fetchResults = async () => {
+  try {
+    const { data, error } = await useFetch(
+      "https://api.spoonacular.com/recipes/complexSearch",
+      {
+        query: {
+          apiKey: config.public.SPOON_API_KEY,
+          number: 7,
+          query: "chicken tikka",
+          fields: "id,title,image", // Ensure the response includes 'id'
+        },
+      }
+    );
+    spoon.value = data.value.results || [];
+  } catch (err) {
+    console.error("Error fetching recipe:", err);
+  }
+};
+
+fetchResults();
+</script>
 
 <style scoped></style>
