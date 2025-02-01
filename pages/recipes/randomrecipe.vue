@@ -8,9 +8,12 @@
       <img :src="spoon.recipes[0].image" alt="" class="my-6" />
       <p v-html="spoon.recipes[0].summary" class="my-6 w-3/4"></p>
     </div>
-    <div class="my-12 text-xl font-bold">
-      Feeling Lucky? Click the Button below!
-    </div>
+    <NuxtLink
+      v-if="spoon && spoon.recipes && spoon.recipes.length > 0"
+      :to="`/recipes/${spoon.recipes[0].id}/information`"
+    >
+      <Button class="button py-2 px-6" title="View Recipe"></Button>
+    </NuxtLink>
     <Button
       @click="fetchRecipe"
       class="p-4 m-4"

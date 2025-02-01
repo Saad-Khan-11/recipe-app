@@ -13,8 +13,10 @@
       </div>
 
       <div class="border-b border-gray-500 my-7"></div>
-      <div v-html="product.summary"></div>
-      <p class="my-4 font-bold">Instructions</p>
+      <div>Cooking Time: {{ product.readyInMinutes }} minutes</div>
+      <div>Health Score: {{ product.healthScore }}</div>
+      <!-- <div v-html="product.summary"></div> -->
+      <p class="my-4 font-bold text-2xl">How to Cook</p>
       <div v-html="product.instructions"></div>
     </div>
   </div>

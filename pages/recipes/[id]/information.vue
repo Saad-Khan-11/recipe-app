@@ -21,8 +21,6 @@ const response = await $fetch(
 );
 
 product.value = response;
-
-console.log(response);
 </script>
 
 <style scoped></style>

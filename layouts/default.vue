@@ -5,7 +5,7 @@
       <NuxtLink to="/">Home (Logo)</NuxtLink>
       <div class="flex justify-around gap-10">
         <NuxtLink to="/about-us">About Us</NuxtLink>
-        <NuxtLink to="/recipes/browse-recipes">Browse Recipes</NuxtLink>
+        <NuxtLink to="/recipes/browse-recipes">Search Recipes</NuxtLink>
         <NuxtLink to="/recipes">Recipes</NuxtLink>
         <NuxtLink to="/recipes/randomrecipe">Random Recipe</NuxtLink>
       </div>
