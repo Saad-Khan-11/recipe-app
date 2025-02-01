@@ -14,7 +14,7 @@ const { recipes } = defineProps(["recipes"]);
 
 <style scoped>
 .card {
-  @apply font-bold rounded-lg bg-slate-50 shadow-lg h-full m-8;
+  @apply font-bold rounded-lg bg-slate-50 shadow-lg m-8 h-full flex flex-col;
 }
 .thumbnail {
   @apply max-h-[150px] max-w-[90%] mx-auto;
